@@ -46,10 +46,11 @@ section.active {
 .nav-links li {
     flex: 1;
     text-align: center;
+    color: #faf8f8;
 }
 
 .nav-links a {
-    color: #ffffff; /* Blanc */
+    color: #f8f7f7; /* Blanc */
     text-decoration: none;
     font-weight: 600;
     padding: 0.5rem;
