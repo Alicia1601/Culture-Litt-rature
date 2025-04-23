@@ -1,0 +1,81 @@
+/* Section principale */
+.oeuvre {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+/* En-tête */
+.oeuvre-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.oeuvre-header h2 {
+    font-size: 2rem;
+    color: #800080;
+    margin-bottom: 0.5rem;
+}
+
+.oeuvre-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Contenu */
+.oeuvre-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.oeuvre-content h3 {
+    font-size: 1.5rem;
+    color: #800080;
+    margin-bottom: 1rem;
+}
+
+.oeuvre-content p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.oeuvre-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.oeuvre-content ul li {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.oeuvre-content ul li strong {
+    color: #800080;
+}
+
+/* Bouton "Donner votre avis" */
+.oeuvre-actions {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-comment {
+    background-color: #800080;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .oeuvre-content {
+        padding: 1.5rem;
+    }
+}

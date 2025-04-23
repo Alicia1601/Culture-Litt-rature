@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKAGIS - Commentaires</title>
+    <link rel="stylesheet" href="../css/styles-communs.css">
+    <link rel="stylesheet" href="../css/commentaires-oeuvre.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+            <img src="../images/logo-akagis.png" alt="Logo AKAGIS">
+        </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section principale Commentaires -->
+    <section class="commentaires-oeuvre">
+        <div class="commentaires-header">
+            <h2 id="oeuvre-title">Commentaires</h2>
+            <p>Partagez votre avis sur cette œuvre avec la communauté.</p>
+        </div>
+
+        <div class="commentaires-content">
+            <!-- Liste des commentaires -->
+            <div class="comments" id="comments-list">
+                <!-- Les commentaires seront insérés dynamiquement via JavaScript -->
+            </div>
+
+            <!-- Formulaire pour ajouter un commentaire -->
+            <div class="comment-form">
+                <h3>Ajoutez votre commentaire</h3>
+                <form id="comment-form">
+                    <div class="form-group">
+                        <label for="comment-name">Votre nom</label>
+                        <input type="text" id="comment-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment-text">Votre commentaire</label>
+                        <textarea id="comment-text" name="comment" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Publier</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>AKAGIS</h3>
+                <p>Une plateforme éducative et culturelle pour allier savoir académique et créativité. Rejoignez-nous pour explorer, apprendre et créer !</p>
+            </div>
+         </div>
+    </footer>
+
+    <script src="../js/scripts-communs.js"></script>
+    <script src="../js/commentaires-oeuvre.js"></script>
+</body>
+</html>

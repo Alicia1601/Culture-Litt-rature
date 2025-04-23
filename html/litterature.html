@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKAGIS - Littérature</title>
+    <link rel="stylesheet" href="../css/styles-communs.css">
+    <link rel="stylesheet" href="../css/litterature.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+            <img src="../images/logo-akagis.png" alt="Logo AKAGIS">
+        </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <!-- Section principale Littérature -->
+    <section class="litterature">
+        <div class="litterature-header">
+            <h2>Bienvenue dans l’univers de la Littérature</h2>
+            <p>Découvrez des œuvres captivantes et partagez vos propres créations littéraires.</p>
+        </div>
+
+        <div class="litterature-content">
+            <!-- Liste des œuvres -->
+            <div class="works">
+                <h3>Découvrez nos œuvres</h3>
+                <div class="work">
+                    <img src="../images/litterature/pays-perdu.jpg" alt="Le rêve d’un pays perdu" class="work-image">
+                    <div class="work-info">
+                        <h4>Le rêve d’un pays perdu</h4>
+                        <p>Un roman captivant qui explore les mystères d’un village togolais.</p>
+                        <div class="work-actions">
+                            <a href="oeuvre-pays-perdu.html" class="btn-read">Lire l’œuvre</a>
+                            <a href="commentaires-oeuvre.html?oeuvre=pays-perdu" class="btn-comment">Donner votre avis</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../images/litterature/naruto-empire.jpg" alt="Naruto - L’Empire caché" class="work-image">
+                    <div class="work-info">
+                        <h4>Naruto - L’Empire caché</h4>
+                        <p>Une version revisitée de Naruto Shippuden.</p>
+                        <div class="work-actions">
+                            <a href="oeuvre-naruto-empire.html" class="btn-read">Lire l’œuvre</a>
+                            <a href="commentaires-oeuvre.html?oeuvre=naruto-empire" class="btn-comment">Donner votre avis</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <h4>Auteur à l’honneur : Jean Kossi</h4>
+                    <p>Un auteur togolais passionné, il nous fait découvrir ses récits poétiques.</p>
+                    <div class="work-actions">
+                        <a href="oeuvres-jean-kossi.html" class="btn-read">Lire ses œuvres</a>
+                        <a href="commentaires-oeuvre.html?oeuvre=jean-kossi" class="btn-comment">Donner votre avis</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulaire pour publier une œuvre -->
+            <div class="publish-form">
+                <h3>Publie ton œuvre</h3>
+                <p>Partage tes écrits avec notre communauté en remplissant ce formulaire.</p>
+                <form id="publish-form">
+                    <div class="form-group">
+                        <label for="work-title">Titre de ton œuvre</label>
+                        <input type="text" id="work-title" name="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="work-type">Fiction</label>
+                        <select id="work-type" name="type" required>
+                            <option value="fiction">Fiction</option>
+                            <option value="poesie">Poésie</option>
+                            <option value="essai">Essai</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="work-summary">Donne un petit résumé</label>
+                        <textarea id="work-summary" name="summary" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="work-content">Écris ton œuvre ici...</label>
+                        <textarea id="work-content" name="content" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Publier l’œuvre</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>AKAGIS</h3>
+                <p>Une plateforme éducative et culturelle pour allier savoir académique et créativité. Rejoignez-nous pour explorer, apprendre et créer !</p>
+            </div>
+         </div>
+    </footer>
+
+    <script src="../js/scripts-communs.js"></script>
+    <script src="../js/litterature.js"></script>
+</body>
+</html>

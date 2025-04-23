@@ -1,0 +1,177 @@
+/* Réinitialisation et styles globaux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    height: 30px; /* Hauteur du conteneur */
+    display: flex;
+    align-items: center; /* Centre l'image verticalement */
+}
+
+.logo img {
+    width: 160px; /* Réduit la largeur de l'image (ajuste cette valeur selon tes besoins) */
+    height: auto; /* Garde les proportions de l'image */
+    object-fit: contain; /* Assure que l'image reste bien proportionnée */
+    margin-top: 40px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #800080;
+    font-weight: 600;
+}
+
+.btn-login {
+    background-color: #800080;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        gap: 0.5rem;
+    }
+    .nav-links li a {
+        font-size: clamp(14px, 4vw, 16px); /* Texte adaptable */
+    }
+}
+.social-links img {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.btn-login {
+    background-color: #af5baf;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #800080;
+    color: #fff;
+    padding: 3rem 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Répartit les sections uniformément */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Permet aux sections de passer à la ligne si nécessaire */
+}
+
+.footer-section {
+    flex: 1; /* Chaque section prend une part égale de l'espace */
+    min-width: 200px; /* Assure une largeur minimale pour éviter un tassement */
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links a {
+    color: #fff;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1rem;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footer-section {
+        min-width: unset; /* Réinitialise la largeur minimale sur petits écrans */
+        margin-bottom: 1.5rem; /* Ajoute un espace entre les sections empilées */
+    }
+}

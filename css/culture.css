@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    padding-bottom: 60px; /* Espace pour la navbar fixe */
+}
+
+.main-content {
+    max-width: 100%;
+    margin: 1rem;
+}
+
+/* Styles pour les sections */
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+/* Styles pour la barre de navigation (fixe en bas) */
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #6b21a8; /* Violet */
+    padding: 0.5rem;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links a {
+    color: #ffffff; /* Blanc */
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    background-color: #9333ea; /* Violet plus clair */
+}
+
+/* Styles pour le forum */
+.forum-header, .literary-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.forum-header h2, .literary-header h2 {
+    font-size: 1.8rem;
+    color: #6b21a8; /* Violet */
+}
+
+.forum-header p, .literary-header p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.culture-content, .literary-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.threads, .literary-posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.thread, .literary-post {
+    background-color: #ffffff; /* Blanc */
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.thread:hover, .literary-post:hover {
+    transform: translateY(-3px);
+}
+
+.thread-header, .literary-post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thread-header h3, .literary-post-header h3 {
+    font-size: 1.3rem;
+    color: #6b21a8; /* Violet */
+}
+
+.thread-meta, .literary-post-meta {
+    font-size: 0.8rem;
+    color: #888;
+    margin: 0.5rem 0;
+}
+
+.thread-meta span, .literary-post-meta span {
+    margin-right: 0.5rem;
+}
+
+.thread p, .literary-post p {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 0.5rem;
+}
+
+/* Styles pour les formulaires */
+.forum-form, .literary-form {
+    background-color: #ffffff; /* Blanc */
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.forum-form h3, .literary-form h3 {
+    font-size: 1.3rem;
+    color: #6b21a8; /* Violet */
+    margin-bottom: 0.5rem;
+}
+
+.form-group {
+    margin-bottom: 0.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.8rem;
+    color: #333;
+    margin-bottom: 0.3rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d8b4fe; /* Violet clair */
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn-create-discussion, .btn-publish-literary, .btn-reply {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #6b21a8; /* Violet */
+    color: #ffffff; /* Blanc */
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-create-discussion:hover, .btn-publish-literary:hover, .btn-reply:hover {
+    background-color: #9333ea; /* Violet plus clair */
+}
+
+/* Styles pour les commentaires */
+.comment-form {
+    margin-top: 1rem;
+}
+
+.reply-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.comments {
+    margin-top: 0.5rem;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.comment-meta {
+    font-size: 0.7rem;
+    color: #888;
+    margin-bottom: 0.3rem;
+}
+
+.comment p {
+    font-size: 0.8rem;
+    color: #444;
+}
+
+/* Boutons de suppression */
+.btn-delete {
+    background-color: transparent;
+    border: none;
+    color: #e76f51; /* Rouge pour la suppression */
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.btn-delete:hover {
+    color: #d1341b;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+    .culture-content, .literary-content {
+        flex-direction: row;
+    }
+
+    .threads, .literary-posts-list {
+        flex: 2;
+    }
+
+    .forum-form, .literary-form {
+        flex: 1;
+    }
+
+    .forum-header h2, .literary-header h2 {
+        font-size: 2rem;
+    }
+
+    .thread-header h3, .literary-post-header h3 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,151 @@
+/* Section principale */
+.blog {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+/* En-tête du blog */
+.blog-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.blog-header h2 {
+    font-size: 2rem;
+    color: #800080;
+    margin-bottom: 0.5rem;
+}
+
+.blog-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Contenu principal (articles + sidebar) */
+.blog-content {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Liste des articles */
+.articles {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.article-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.article-card a {
+    background-color: rgb(75, 7, 70);
+    border-radius: 5px;
+    color: #f9f9f9;
+
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+}
+
+.article-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.article-card h3 {
+    font-size: 1.2rem;
+    color: #800080;
+    margin: 1rem;
+}
+
+.article-card p {
+    color: #666;
+    margin: 0 1rem 1rem;
+}
+
+.article-image {
+    width: 100%;
+    height: 200px; /* Hauteur par défaut pour les autres cartes */
+    object-fit: cover;
+    display: block;
+}
+
+.personnalisation-card .article-image {
+    height: 600px; /* Hauteur spécifique pour Personnalisation.jpg */
+}
+
+.btn-read-more {
+    display: block;
+    background-color: #800080;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 1rem 1rem;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    font-size: 1.5rem;
+    color: #800080;
+    margin-bottom: 1rem;
+}
+
+.categories {
+    list-style: none;
+    padding: 0;
+}
+
+.categories li {
+    margin-bottom: 0.5rem;
+}
+
+.categories a {
+    color: #666;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.categories a:hover {
+    color: #800080;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .blog-content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        text-align: center;
+    }
+
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .categories li {
+        margin-bottom: 0;
+    }
+}

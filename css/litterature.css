@@ -1,0 +1,157 @@
+/* Section principale */
+.litterature {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+/* En-tête */
+.litterature-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.litterature-header h2 {
+    font-size: 2rem;
+    color: #800080;
+    margin-bottom: 0.5rem;
+}
+
+.litterature-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Contenu */
+.litterature-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+}
+
+/* Liste des œuvres */
+.works {
+    flex: 1;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.works h3 {
+    font-size: 1.5rem;
+    color: #800080;
+    margin-bottom: 1.5rem;
+}
+
+.work {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.work:last-child {
+    border-bottom: none;
+}
+
+.work-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.work-info h4 {
+    font-size: 1.1rem;
+    color: #800080;
+    margin-bottom: 0.5rem;
+}
+
+.work-info p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.work-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-read,
+.btn-comment {
+    background-color: #800080;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* Formulaire de publication */
+.publish-form {
+    flex: 1;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.publish-form h3 {
+    font-size: 1.5rem;
+    color: #800080;
+    margin-bottom: 1rem;
+}
+
+.publish-form p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn-submit {
+    background-color: #800080;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .litterature-content {
+        flex-direction: column;
+    }
+
+    .work-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

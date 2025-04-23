@@ -1,0 +1,43 @@
+/* Section principale */
+.culture-litterature {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* En-tête */
+.culture-litterature-header h2 {
+    font-size: 2rem;
+    color: #800080;
+    margin-bottom: 1rem;
+}
+
+.culture-litterature-header p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+/* Boutons de navigation */
+.culture-litterature-links {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.btn-section {
+    background-color: #800080;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .culture-litterature-links {
+        flex-direction: column;
+    }
+}

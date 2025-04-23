@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKAGIS - Culture & Littérature</title>
+    <link rel="stylesheet" href="../css/styles-communs.css">
+    <link rel="stylesheet" href="../css/culture.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Section principale -->
+    <main class="main-content">
+        <!-- Onglet Discussions -->
+        <section class="forum active" id="forum-section">
+            <div class="forum-header">
+                <h2>Forum Culturel</h2>
+                <p>Participez à des discussions vibrantes sur la culture togolaise et internationale.</p>
+            </div>
+            <div class="culture-content">
+                <!-- Liste des discussions -->
+                <div class="threads" id="threads-container">
+                    <!-- Discussions initiales -->
+                    <div class="thread" data-id="thread-1">
+                        <div class="thread-header">
+                            <h3>Les traditions togolaises : un patrimoine à préserver</h3>
+                            <button class="btn-delete" data-type="thread" data-id="thread-1">Supprimer</button>
+                        </div>
+                        <div class="thread-meta">
+                            <span>Par Kofi Adam</span> • <span class="reply-count">0 réponses</span> • <span>3 jours</span>
+                        </div>
+                        <p>Quelles traditions togolaises vous tiennent à cœur ? Partagez vos souvenirs et idées pour les préserver.</p>
+                        <!-- Formulaire de commentaire -->
+                        <div class="comment-form">
+                            <form class="reply-form">
+                                <div class="form-group">
+                                    <input type="text" class="reply-author" placeholder="Votre nom" required>
+                                    <textarea class="reply-content" placeholder="Votre commentaire" rows="2" required></textarea>
+                                </div>
+                                <button type="submit" class="btn-reply">Commenter</button>
+                            </form>
+                            <div class="comments"></div>
+                        </div>
+                    </div>
+                    <div class="thread" data-id="thread-2">
+                        <div class="thread-header">
+                            <h3>Les festivals culturels : une célébration de la diversité</h3>
+                            <button class="btn-delete" data-type="thread" data-id="thread-2">Supprimer</button>
+                        </div>
+                        <div class="thread-meta">
+                            <span>Par Nyatika Bernadin</span> • <span class="reply-count">0 réponses</span> • <span>1 semaine</span>
+                        </div>
+                        <p>Quels festivals culturels avez-vous visités ? Partagez vos expériences et recommandations.</p>
+                        <!-- Formulaire de commentaire -->
+                        <div class="comment-form">
+                            <form class="reply-form">
+                                <div class="form-group">
+                                    <input type="text" class="reply-author" placeholder="Votre nom" required>
+                                    <textarea class="reply-content" placeholder="Votre commentaire" rows="2" required></textarea>
+                                </div>
+                                <button type="submit" class="btn-reply">Commenter</button>
+                            </form>
+                            <div class="comments"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulaire pour créer une discussion -->
+                <div class="forum-form">
+                    <h3>Créer une nouvelle discussion</h3>
+                    <form id="discussion-form">
+                        <div class="form-group">
+                            <label for="discussion-title">Titre de la discussion</label>
+                            <input type="text" id="discussion-title" name="discussion-title" placeholder="Entrez le titre de votre discussion" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="discussion-author">Votre nom</label>
+                            <input type="text" id="discussion-author" name="discussion-author" placeholder="Entrez votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="discussion-description">Description</label>
+                            <textarea id="discussion-description" name="discussion-description" placeholder="Décrivez votre sujet de discussion" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-create-discussion">Créer la discussion</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Onglet Publications Littéraires -->
+        <section class="literary-posts" id="literary-section">
+            <div class="literary-header">
+                <h2>Publications Littéraires</h2>
+                <p>Partagez vos écrits et découvrez ceux des autres !</p>
+            </div>
+            <div class="literary-content">
+                <div class="literary-form">
+                    <h3>Publier un écrit</h3>
+                    <form id="literary-form">
+                        <div class="form-group">
+                            <label for="literary-title">Titre de l'écrit</label>
+                            <input type="text" id="literary-title" name="literary-title" placeholder="Entrez le titre de votre écrit" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="literary-author">Votre nom</label>
+                            <input type="text" id="literary-author" name="literary-author" placeholder="Entrez votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="literary-content">Votre écrit</label>
+                            <textarea id="literary-content" name="literary-content" placeholder="Écrivez votre texte ici" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-publish-literary">Publier</button>
+                    </form>
+                </div>
+                <div class="literary-posts-list" id="literary-posts-container">
+                    <!-- Les publications littéraires seront ajoutées ici -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Barre de navigation (fixe en bas) -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#" class="nav-tab active" data-tab="forum-section">Discussions</a></li>
+            <li><a href="#" class="nav-tab" data-tab="literary-section">Littérature</a></li>
+        </ul>
+    </nav>
+
+    <script src="../js/scripts-communs.js"></script>
+    <script src="../js/culture.js"></script>
+</body>
+</html>
